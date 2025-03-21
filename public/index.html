@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Video Page</title>
+    <link rel="stylesheet" href="styles/root.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <div id="errorMessage" style="display: none; color: white; text-align: center; margin-top: 50px;">
+        Sorry, we couldn't find this experience. Please check your QR code or link.
+    </div>
+
+    <div class="video-container">
+
+        <video id="videoPlayer" autoplay muted playsinline>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Click to Chat Button -->
+        <div id="chatButton" class="chat-button">
+            <img src="assets/images/chat.png" alt="Chat Icon">
+            <span>Click to chat</span>
+        </div>
+
+
+        <!-- Overlay (Appears when video ends or chat is clicked) -->
+        <div id="overlay" class="overlay">
+            <div class="overlay-blur"></div> <!-- Fake Blur Layer -->
+            <div class="overlay-content">
+                <div class="overlay-text-content">
+                    <img src="assets/images/logo.png" alt="Logo" class="overlay-logo"> <!-- Logo (Optional) -->
+                    <h2>Let's have a conversation!</h2>
+                    <p>Choose and click a button below</p>
+                </div>
+
+                <div class="overlay-buttons">
+                    <button id="chatOverlayButton">Chat with me</button>
+                    <button id="teamOverlayButton">Meet the team</button>
+                </div>
+                <button id="replayButton" class="replay-button">Replay Video</button>
+
+                <p class="footer-text">Powered by ONEW3RLD</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

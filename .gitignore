@@ -1,0 +1,38 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs & runtime files
+logs/
+*.log
+*.log.*
+
+# OS / Editor-specific files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Environment Variables & Config
+.env
+.env.local
+.env.development
+.env.production
+
+# Build Files
+dist/
+build/
+out/
+coverage/
+
+# Temporary Files
+*.cache
+.tmp/
+
+# Ignore video assets (optional)
+public/assets/videos/
+
+# Ignore compiled files (if any)
+*.tsbuildinfo

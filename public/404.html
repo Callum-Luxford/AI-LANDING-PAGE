@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        a {
+            color: cyan;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Oops! Page Not Found.</h1>
+    <p>The link you followed may be broken or the page might have been removed.</p>
+    <p>You will be redirected shortly... or <a href="https://callumluxford.dev">click here</a>.</p>
+
+    <!-- Move script here inside body -->
+    <script>
+        alert("✅ Script loaded");
+        setTimeout(() => {
+            alert("⏳ Redirecting now...");
+            window.location.replace("https://callumluxford.dev");
+        }, 5000);
+    </script>
+
+</body>
+
+</html>

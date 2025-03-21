@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+/* Video Container: Ensures the video stays inside the viewport */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+/* Video Element: Scales properly to fit the screen */
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Ensure Body & HTML Take Up Full Height */
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Chat Button (Initially Hidden) */
+/* Chat Button (Initially Hidden) */
+/* Chat Button (Initially Hidden) */
+.chat-button {
+    position: absolute;
+    bottom: -100px;
+    left: 20px;
+    color: var(--font-primary-clr);
+    border: 1px solid white;
+    background: transparent;
+    padding: 12px 20px;
+    font-size: var(--font-size-md);
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-out;
+    z-index: 20;
+    opacity: 0;
+}
+
+.chat-button img {
+    width: 20px;
+    filter: var(--icon-clr-1);
+}
+
+/* Chat Button Appears (Slides Up with Bounce) */
+.chat-button.show {
+    opacity: 1;
+    transform: translateY(-120px);
+}
+
+/* Infinite Pulsing Outline */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.4);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+}
+
+.chat-button.pulse {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+/* Hide Chat Button When Overlay is Open */
+.chat-button.hidden {
+    opacity: 0;
+    transform: translateY(80px);
+    /* Moves off-screen */
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Hover Effect - Moves Up Slightly */
+.chat-button.show:hover {
+    transform: translateY(-125px);
+    /* Only moves 5px up */
+}
+
+/* Chat Button (Initially Hidden) */
+/* Chat Button (Initially Hidden) */
+/* Chat Button (Initially Hidden) */
+
+
+/* Overlay Styling */
+/* Overlay Styling */
+/* Overlay Styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 68, 255, 0.774);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    z-index: 10;
+}
+
+.overlay.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fake Blurred Background */
+.overlay-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    will-change: backdrop-filter;
+    z-index: 5;
+}
+
+/* Overlay Content Box */
+.overlay-content {
+    text-align: center;
+    background: transparent;
+    padding: 40px 12px;
+    border-radius: 20px;
+    max-width: 100%;
+    width: 400px;
+    color: var(--font-primary-clr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    z-index: 15;
+}
+
+.overlay-content .overlay-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+/* Logo */
+.overlay-logo {
+    width: 65px;
+}
+
+/* Title */
+.overlay-content .overlay-text-content h2 {
+    width: 100%;
+    font-weight: 700;
+    font-size: var(--font-size-3xl);
+}
+
+/* Subtitle */
+.overlay-content .overlay-text-content p {
+    width: 100%;
+    margin-top: -1.8rem;
+    color: var(--font-secondary-clr);
+    font-weight: 500;
+    font-size: var(--font-size-md);
+}
+
+/* Buttons Container */
+.overlay-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Adjust for larger screens */
+@media (min-width: 400px) {
+
+    /* Tablets & above */
+    .overlay-buttons {
+        justify-content: space-between;
+        max-width: 500px;
+    }
+
+    .overlay-content {
+        padding: 40px 25px;
+    }
+}
+
+/* Transparent Buttons */
+button {
+    color: var(--font-primary-clr);
+    border: 1px solid white;
+    background: transparent;
+    padding: 12px 20px;
+    font-size: var(--font-size-md);
+    font-weight: 900;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-weight: 700;
+}
+
+/* Hover Effect: Background stays transparent, but text color dims slightly */
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Replay Button */
+.replay-button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    font-size: var(--font-size-md);
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid white;
+    font-weight: 200;
+
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.replay-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Overlay Styling */
+/* Overlay Styling */
+/* Overlay Styling */
+
+.footer-text {
+    color: var(--font-secondary-clr);
+    font-size: var(--font-size-sm);
+}
+
+
+/* Overwrite styles encase client change */
+/* Glass Effect for Buttons */
+.overlay-buttons button {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 12px 20px;
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.2s ease-in-out;
+
+    flex: 1 1 auto;
+    min-width: 140px;
+    max-width: 180px;
+    text-align: center;
+    white-space: nowrap;
+    height: auto;
+}
+
+/* Button Hover Effect */
+.overlay-buttons button:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
