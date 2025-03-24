@@ -80,6 +80,7 @@ body {
 .chat-button.show {
     opacity: 1;
     transform: translateY(-120px);
+    margin-bottom: env(safe-area-inset-bottom);
 }
 
 /* Infinite Pulsing Outline */
