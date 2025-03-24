@@ -18,20 +18,36 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const videoPlayer = document.getElementById("videoPlayer");
+    const playButtonOverlay = document.getElementById("playButtonOverlay");
+
     videoPlayer.src = data.videoUrl;
     videoPlayer.load();
 
-    videoPlayer.play().catch((err) => {
-      console.error("Video playback failed:", err);
-      redirectTo404();
+    // Play video only after user clicks the play button overlay
+    playButtonOverlay.addEventListener("click", () => {
+      videoPlayer
+        .play()
+        .then(() => {
+          playButtonOverlay.classList.add("hidden");
+
+          // ✅ Show chat button 2 seconds after video starts playing
+          setTimeout(() => {
+            chatButton.classList.remove("hidden");
+            chatButton.classList.add("show", "pulse");
+          }, 2000);
+        })
+        .catch((err) => {
+          console.error("Playback failed after user click:", err);
+          document.getElementById("errorMessage").style.display = "block";
+          document.getElementById("errorMessage").textContent =
+            "Video playback failed. Please reload the page.";
+        });
     });
 
     const chatButton = document.getElementById("chatButton");
     const overlay = document.getElementById("overlay");
 
-    setTimeout(() => {
-      chatButton.classList.add("show", "pulse");
-    }, 2000);
+    // ❌ Removed the old setTimeout for showing chatButton here
 
     chatButton.addEventListener("click", () => {
       overlay.classList.add("show");
@@ -59,6 +75,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       overlay.classList.remove("show");
       videoPlayer.currentTime = 0;
       videoPlayer.play();
+      playButtonOverlay.classList.add("hidden");
       setTimeout(() => {
         chatButton.classList.remove("hidden");
         chatButton.classList.add("show", "pulse");
@@ -70,7 +87,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-// New: Redirect to dynamic 404 route
+// Existing: Redirect to dynamic 404 route
 function redirectTo404() {
   window.location.href = "/404";
 }
