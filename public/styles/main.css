@@ -70,6 +70,15 @@ body {
     opacity: 0;
 }
 
+/* Mobile fix for iOS Safari safe area */
+@media (max-width: 768px) {
+    .chat-button {
+        position: fixed;
+        bottom: calc(20px + env(safe-area-inset-bottom));
+        left: 20px;
+    }
+}
+
 .chat-button img {
     width: 20px;
     filter: var(--icon-clr-1);
@@ -80,7 +89,6 @@ body {
 .chat-button.show {
     opacity: 1;
     transform: translateY(-120px);
-    margin-bottom: env(safe-area-inset-bottom);
 }
 
 /* Infinite Pulsing Outline */
