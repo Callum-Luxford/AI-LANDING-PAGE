@@ -32,7 +32,7 @@ coverage/
 .tmp/
 
 # Ignore video assets (optional)
-public/assets/videos/
+# public/assets/videos/
 
 # Ignore compiled files (if any)
 *.tsbuildinfo
