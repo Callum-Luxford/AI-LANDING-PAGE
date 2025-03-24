@@ -22,9 +22,7 @@ const getVideoDetails = (req, res) => {
 
       // Convert relative video path to absolute URL
       const videoData = videos[videoId];
-      videoData.videoUrl = `${req.protocol}://${req.get("host")}${
-        videoData.videoUrl
-      }`;
+      videoData.videoUrl = `https://${req.get("host")}${videoData.videoUrl}`;
       return res.json(videoData);
     } catch (parseError) {
       return res.status(500).json({ error: "Failed to parse video data" });
