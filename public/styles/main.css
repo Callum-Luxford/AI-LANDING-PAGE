@@ -59,7 +59,7 @@ body {
     border: 1px solid white;
     background: transparent;
     padding: 12px 20px;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-2xl);
     border-radius: 30px;
     cursor: pointer;
     display: flex;
@@ -73,6 +73,7 @@ body {
 .chat-button img {
     width: 20px;
     filter: var(--icon-clr-1);
+    margin-right: 5px;
 }
 
 /* Chat Button Appears (Slides Up with Bounce) */
