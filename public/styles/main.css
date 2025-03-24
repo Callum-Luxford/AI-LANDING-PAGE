@@ -70,12 +70,13 @@ body {
     opacity: 0;
 }
 
-/* Mobile fix for iOS Safari safe area */
+/* Mobile override for iOS fix */
 @media (max-width: 768px) {
     .chat-button {
         position: fixed;
         bottom: calc(20px + env(safe-area-inset-bottom));
         left: 20px;
+        transform: none !important;
     }
 }
 
