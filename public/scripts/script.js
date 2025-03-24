@@ -47,11 +47,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     const chatButton = document.getElementById("chatButton");
     const overlay = document.getElementById("overlay");
 
-    // ❌ Removed the old setTimeout for showing chatButton here
+    // Removed the old setTimeout for showing chatButton here
 
     chatButton.addEventListener("click", () => {
       overlay.classList.add("show");
       chatButton.classList.add("hidden");
+      videoPlayer.pause(); // Pause video
+    });
+
+    closeOverlayButton.addEventListener("click", () => {
+      overlay.classList.remove("show");
+      chatButton.classList.remove("hidden");
+      videoPlayer.play(); // Resume video
     });
 
     videoPlayer.addEventListener("ended", () => {

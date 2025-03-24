@@ -355,3 +355,32 @@ button:hover {
 .play-button-overlay {
     animation: pulse 2s infinite ease-in-out;
 }
+
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+
+/* Close Overlay Button */
+.close-overlay-button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.close-overlay-button img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease;
+}
+
+.close-overlay-button img:hover {
+    transform: rotate(90deg);
+}
+
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
