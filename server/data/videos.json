@@ -1,8 +1,8 @@
 {
-  "manafinder": {
-    "videoUrl": "/assets/videos/Manafinder.mp4",
-    "chatLink": "https://example.com/hotel",
-    "teamLink": "https://example.com/hotel/team",
-    "replayLink": "?id=manafinder"
+  "onew3rld": {
+    "videoUrl": "/assets/videos/onew3rld.mp4",
+    "chatLink": "https://chat.onew3rld.ai/org/AI",
+    "teamLink": "https://chat.onew3rld.ai/org/AI",
+    "replayLink": "?id=onew3rld"
   }
 }

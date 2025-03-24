@@ -20,7 +20,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     const videoPlayer = document.getElementById("videoPlayer");
     videoPlayer.src = data.videoUrl;
     videoPlayer.load();
-    videoPlayer.play();
+
+    videoPlayer.play().catch((err) => {
+      console.error("Video playback failed:", err);
+      redirectTo404();
+    });
 
     const chatButton = document.getElementById("chatButton");
     const overlay = document.getElementById("overlay");
