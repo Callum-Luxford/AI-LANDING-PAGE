@@ -3,6 +3,33 @@
     "videoUrl": "/assets/videos/onew3rld.mp4",
     "chatLink": "https://chat.onew3rld.ai/org/AI",
     "teamLink": "https://chat.onew3rld.ai/org/AI",
-    "replayLink": "?id=onew3rld"
+    "replayLink": "?id=onew3rld",
+    "favicon": "/assets/icons/onew3rld-favicon.png",
+    "logo": "/assets/images/onew3rld-logo.png",
+    "themeColor": "rgba(0, 68, 255, 0.75)",
+    "buttonColor": "white",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.25)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#78a7ff",
+    "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)"
+  },
+
+  "carCollection": {
+    "videoUrl": "/assets/videos/carCollection.mp4",
+    "chatLink": "https://chat.onew3rld.ai/org/AI",
+    "teamLink": "https://chat.onew3rld.ai/org/AI",
+    "replayLink": "?id=carCollection",
+    "logo": "/assets/images/TCP-LOGO.png",
+    "logoSize": "150px",
+    "themeColor": "rgba(0, 0, 0, 0.75)",
+    "buttonColor": "#ffffff",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#b3b3b3",
+    "iconFilter": "invert(100%) brightness(120%)"
   }
 }

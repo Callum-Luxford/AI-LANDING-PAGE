@@ -1,7 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* ---------------------- THEME COLOR HOOKS ---------------------- */
+:root {
+    --overlay-clr: rgba(0, 68, 255, 0.75);
+    /* Overlay background */
+    --button-clr: white;
+    /* Button text */
+    --button-border-clr: rgba(255, 255, 255, 0.3);
+    /* Button border */
+    --button-hover-bg: rgba(255, 255, 255, 0.25);
+    /* Hover background */
+    --button-hover-border: rgba(255, 255, 255, 0.5);
+    /* Hover border */
+    --font-primary-theme: #ffffff;
+    /* Main heading & button text */
+    --font-secondary-theme: #78a7ff;
+    /* Subtitle & footer */
+    --icon-clr-1: invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%);
+    --logo-size: 65px;
+}
 
-/* Video Container: Ensures the video stays inside the viewport */
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 .video-container {
     position: fixed;
     top: 0;
@@ -22,7 +50,6 @@ video {
     display: block;
 }
 
-/* Desktop override */
 @media (min-width: 768px) {
     video {
         width: 100%;
@@ -37,25 +64,11 @@ video {
     }
 }
 
-/* Ensure Body & HTML Take Up Full Height */
-html,
-body {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-/* Chat Button (Initially Hidden) */
-/* Chat Button (Initially Hidden) */
-/* Chat Button (Initially Hidden) */
 .chat-button {
     position: absolute;
     bottom: -100px;
     left: 20px;
-    color: var(--font-primary-clr);
+    color: var(--font-primary-theme, var(--font-primary-clr));
     border: 1px solid white;
     background: transparent;
     padding: 12px 20px;
@@ -70,7 +83,6 @@ body {
     opacity: 0;
 }
 
-/* Mobile override for iOS fix */
 @media (max-width: 768px) {
     .chat-button {
         position: fixed;
@@ -86,13 +98,11 @@ body {
     margin-right: 5px;
 }
 
-/* Chat Button Appears (Slides Up with Bounce) */
 .chat-button.show {
     opacity: 1;
     transform: translateY(-120px);
 }
 
-/* Infinite Pulsing Outline */
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.4);
@@ -107,35 +117,23 @@ body {
     animation: pulse 2s infinite ease-in-out;
 }
 
-/* Hide Chat Button When Overlay is Open */
 .chat-button.hidden {
     opacity: 0;
     transform: translateY(80px);
-    /* Moves off-screen */
     transition: opacity 0.5s, transform 0.5s;
 }
 
-/* Hover Effect - Moves Up Slightly */
 .chat-button.show:hover {
     transform: translateY(-125px);
-    /* Only moves 5px up */
 }
 
-/* Chat Button (Initially Hidden) */
-/* Chat Button (Initially Hidden) */
-/* Chat Button (Initially Hidden) */
-
-
-/* Overlay Styling */
-/* Overlay Styling */
-/* Overlay Styling */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 68, 255, 0.774);
+    background: var(--overlay-clr, rgba(0, 68, 255, 0.75));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +148,6 @@ body {
     transform: translateY(0);
 }
 
-/* Fake Blurred Background */
 .overlay-blur {
     position: absolute;
     top: 0;
@@ -164,7 +161,6 @@ body {
     z-index: 5;
 }
 
-/* Overlay Content Box */
 .overlay-content {
     text-align: center;
     background: transparent;
@@ -172,11 +168,11 @@ body {
     border-radius: 20px;
     max-width: 100%;
     width: 400px;
-    color: var(--font-primary-clr);
+    color: var(--font-primary-theme, var(--font-primary-clr));
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 2.2rem;
     z-index: 15;
 }
 
@@ -185,31 +181,33 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 1rem;
 }
 
-/* Logo */
 .overlay-logo {
-    width: 65px;
+    width: var(--logo-size, 65px);
+    margin-bottom: 1rem;
 }
 
-/* Title */
 .overlay-content .overlay-text-content h2 {
-    width: 100%;
     font-weight: 700;
     font-size: var(--font-size-3xl);
+    width: 100%;
 }
 
-/* Subtitle */
-.overlay-content .overlay-text-content p {
-    width: 100%;
-    margin-top: -1.8rem;
-    color: var(--font-secondary-clr);
+.overlay-content .overlay-text-content p,
+.footer-text {
     font-weight: 500;
     font-size: var(--font-size-md);
+    color: var(--font-secondary-theme, var(--font-secondary-clr));
+    margin: 0;
 }
 
-/* Buttons Container */
+
+.overlay-content .overlay-text-content p {
+    margin-top: -1rem;
+}
+
+
 .overlay-buttons {
     display: flex;
     justify-content: center;
@@ -221,10 +219,7 @@ body {
     margin: 0 auto;
 }
 
-/* Adjust for larger screens */
 @media (min-width: 400px) {
-
-    /* Tablets & above */
     .overlay-buttons {
         justify-content: space-between;
         max-width: 500px;
@@ -235,62 +230,11 @@ body {
     }
 }
 
-/* Transparent Buttons */
-button {
-    color: var(--font-primary-clr);
-    border: 1px solid white;
-    background: transparent;
-    padding: 12px 20px;
-    font-size: var(--font-size-md);
-    font-weight: 900;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
-    font-weight: 700;
-}
-
-/* Hover Effect: Background stays transparent, but text color dims slightly */
-button:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.9);
-}
-
-/* Replay Button */
+.overlay-buttons button,
 .replay-button {
-    width: 100%;
-    margin-top: 15px;
-    padding: 12px;
-    font-size: var(--font-size-md);
-    border-radius: 30px;
-    background: transparent;
-    border: 1px solid white;
-    font-weight: 200;
-
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.replay-button:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-/* Overlay Styling */
-/* Overlay Styling */
-/* Overlay Styling */
-
-.footer-text {
-    color: var(--font-secondary-clr);
-    font-size: var(--font-size-sm);
-}
-
-
-/* Overwrite styles encase client change */
-/* Glass Effect for Buttons */
-.overlay-buttons button {
     background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
+    border: 1px solid var(--button-border-clr, rgba(255, 255, 255, 0.3));
+    color: var(--button-clr, white);
     padding: 12px 20px;
     font-size: var(--font-size-md);
     font-weight: 700;
@@ -298,7 +242,6 @@ button:hover {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: all 0.2s ease-in-out;
-
     flex: 1 1 auto;
     min-width: 140px;
     max-width: 180px;
@@ -307,16 +250,33 @@ button:hover {
     height: auto;
 }
 
-/* Button Hover Effect */
-.overlay-buttons button:hover {
-    background: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+.replay-button {
+    width: 100%;
+    max-width: 400px;
 }
 
+.overlay-buttons button:hover,
+.replay-button:hover {
+    background: var(--button-hover-bg, rgba(255, 255, 255, 0.25));
+    border-color: var(--button-hover-border, rgba(255, 255, 255, 0.5));
+}
 
-/* ----------------------------------------------- */
-/* ----------------------------------------------- */
-/* ----------------------------------------------- */
+button {
+    color: var(--font-primary-theme, var(--font-primary-clr));
+    border: 1px solid white;
+    background: transparent;
+    padding: 12px 20px;
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+}
 
 .play-button-overlay {
     position: absolute;
@@ -334,6 +294,7 @@ button:hover {
     cursor: pointer;
     z-index: 30;
     transition: background 0.3s, transform 0.3s;
+    animation: pulse 2s infinite ease-in-out;
 }
 
 .play-button-overlay:hover {
@@ -351,17 +312,6 @@ button:hover {
     filter: var(--icon-clr-1);
 }
 
-/* Apply pulse animation to the Play Button Overlay */
-.play-button-overlay {
-    animation: pulse 2s infinite ease-in-out;
-}
-
-/* ----------------------------------------------- */
-/* ----------------------------------------------- */
-/* ----------------------------------------------- */
-
-
-/* Close Overlay Button */
 .close-overlay-button {
     position: absolute;
     top: 40px;
@@ -380,7 +330,3 @@ button:hover {
 .close-overlay-button img:hover {
     transform: rotate(90deg);
 }
-
-/* ----------------------------------------------- */
-/* ----------------------------------------------- */
-/* ----------------------------------------------- */
