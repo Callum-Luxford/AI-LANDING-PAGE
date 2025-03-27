@@ -53,8 +53,10 @@ function initializeVideoPlayer(data) {
       .then(() => {
         playButtonOverlay.classList.add("hidden");
         setTimeout(() => {
-          chatButton.classList.remove("hidden");
-          chatButton.classList.add("show", "pulse");
+          requestAnimationFrame(() => {
+            chatButton.classList.remove("hidden");
+            chatButton.classList.add("show", "pulse");
+          });
         }, 2000);
       })
       .catch((err) => {
