@@ -70,6 +70,10 @@ function initializeVideoPlayer(data) {
 
   videoPlayer.addEventListener("ended", () => {
     document.getElementById("overlay").classList.add("show");
+
+    // Fix: Ensure it disappears properly
+    chatButton.classList.remove("show", "pulse");
+    void chatButton.offsetWidth;
     chatButton.classList.add("hidden");
   });
 }
@@ -82,14 +86,23 @@ function handleOverlayEvents(data) {
 
   chatButton.addEventListener("click", () => {
     overlay.classList.add("show");
+
+    // ✅ Hide chat button
+    chatButton.classList.remove("show", "pulse");
+    void chatButton.offsetWidth; // force reflow
     chatButton.classList.add("hidden");
+
     videoPlayer.pause();
   });
 
   closeOverlayButton.addEventListener("click", () => {
     overlay.classList.remove("show");
-    chatButton.classList.remove("hidden");
     videoPlayer.play();
+
+    // ✅ Show chat button again
+    chatButton.classList.remove("hidden");
+    void chatButton.offsetWidth;
+    chatButton.classList.add("show", "pulse");
   });
 
   document.getElementById("chatOverlayButton").addEventListener("click", () => {
