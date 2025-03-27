@@ -1,21 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
 /* ---------------------- THEME COLOR HOOKS ---------------------- */
 :root {
     --overlay-clr: rgba(0, 68, 255, 0.75);
-    /* Overlay background */
     --button-clr: white;
-    /* Button text */
     --button-border-clr: rgba(255, 255, 255, 0.3);
-    /* Button border */
     --button-hover-bg: rgba(255, 255, 255, 0.25);
-    /* Hover background */
     --button-hover-border: rgba(255, 255, 255, 0.5);
-    /* Hover border */
     --font-primary-theme: #ffffff;
-    /* Main heading & button text */
     --font-secondary-theme: #78a7ff;
-    /* Subtitle & footer */
     --icon-clr-1: invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%);
     --logo-size: 65px;
 }
@@ -67,10 +58,12 @@ video {
 .chat-button {
     position: absolute;
     bottom: -100px;
-    left: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     color: var(--font-primary-theme, var(--font-primary-clr));
     border: 1px solid white;
-    background: transparent;
+    /* background: transparent; */
+    background: rgba(0, 68, 255, 0.75);
     padding: 12px 20px;
     font-size: var(--font-size-2xl);
     border-radius: 30px;
@@ -87,8 +80,8 @@ video {
     .chat-button {
         position: fixed;
         bottom: calc(20px + env(safe-area-inset-bottom));
-        left: 20px;
-        transform: none !important;
+        left: 50%;
+        transform: translateX(-50%) !important;
     }
 }
 
@@ -100,7 +93,7 @@ video {
 
 .chat-button.show {
     opacity: 1;
-    transform: translateY(-120px);
+    transform: translate(-50%, -120px);
 }
 
 @keyframes pulse {
@@ -119,12 +112,12 @@ video {
 
 .chat-button.hidden {
     opacity: 0;
-    transform: translateY(80px);
+    transform: translate(-50%, 80px);
     transition: opacity 0.5s, transform 0.5s;
 }
 
 .chat-button.show:hover {
-    transform: translateY(-125px);
+    transform: translate(-50%, -125px);
 }
 
 .overlay {
