@@ -31,5 +31,22 @@
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#b3b3b3",
     "iconFilter": "invert(100%) brightness(120%)"
+  },
+
+  "stonebond": {
+    "videoUrl": "/assets/videos/stonebond.mp4",
+    "chatLink": "https://chat.onew3rld.ai/org/PropertyDevelopers",
+    "teamLink": "https://chat.onew3rld.ai/org/PropertyDevelopers",
+    "replayLink": "?id=stonebond",
+    "logo": "/assets/images/stonebond-logo.png",
+    "logoSize": "200px",
+    "themeColor": "rgba(161, 1, 255, 0.75)",
+    "buttonColor": "#ffffff",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#b3b3b3",
+    "iconFilter": "invert(100%) brightness(120%)"
   }
 }
