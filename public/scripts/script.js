@@ -134,6 +134,8 @@ function applyBranding(data) {
   if (data.themeColor) root.style.setProperty("--overlay-clr", data.themeColor);
   if (data.buttonColor)
     root.style.setProperty("--button-clr", data.buttonColor);
+  if (data.buttonHoverFontColor)
+    root.style.setProperty("--button-hover-font-clr", data.buttonHoverFontColor)
   if (data.buttonBorderColor)
     root.style.setProperty("--button-border-clr", data.buttonBorderColor);
   if (data.buttonHoverBg)

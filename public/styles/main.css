@@ -5,6 +5,7 @@
     --button-border-clr: rgba(255, 255, 255, 0.3);
     --button-hover-bg: rgba(255, 255, 255, 0.25);
     --button-hover-border: rgba(255, 255, 255, 0.5);
+    --button-hover-font-clr: #ffffff;
     --font-primary-theme: #ffffff;
     --font-secondary-theme: #78a7ff;
     --icon-clr-1: invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%);
@@ -63,7 +64,7 @@ video {
     /* Offscreen below */
     opacity: 0;
 
-    color: var(--font-primary-theme, var(--font-primary-clr));
+    color: #ffffff;
     border: 1px solid white;
     background: rgba(0, 68, 255, 0.75);
     padding: 12px 20px;
@@ -276,7 +277,7 @@ button {
 
 button:hover {
     background: rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--button-hover-font-clr, rgba(255, 255, 255, 0.9));
 }
 
 .play-button-overlay {
