@@ -64,7 +64,7 @@ video {
     /* Offscreen below */
     opacity: 0;
 
-    color: #ffffff;
+    color: #ffffff !important;
     border: 1px solid white;
     background: rgba(0, 68, 255, 0.75);
     padding: 12px 20px;
@@ -88,6 +88,7 @@ video {
         position: fixed;
         bottom: calc(20px + env(safe-area-inset-bottom));
         left: 50%;
+        color: #ffffff !important;
         /* Remove transform override! */
         /* Let .show/.hidden handle transform properly */
     }
