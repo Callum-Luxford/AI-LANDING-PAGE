@@ -119,5 +119,22 @@
     "fontPrimaryColor": "#0E2B42",
     "fontSecondaryColor": "#0E2B42",
     "iconFilter": "invert(100%) brightness(120%)"
+  },
+
+  "robb-report": {
+    "videoUrl": "/assets/videos/robb-report.mp4",
+    "chatLink": "https://chat.onew3rld.ai/org/PUBLICATION/chat/42g9fw62sz8ioh6",
+    "teamLink": "https://chat.onew3rld.ai/org/PUBLICATION",
+    "replayLink": "?id=robb-report",
+    "logo": "/assets/images/robb-report-logo.png",
+    "logoSize": "350px",
+    "themeColor": "rgba(25, 29, 40, 0.75)",
+    "buttonColor": "white",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.25)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#78a7ff",
+    "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)"
   }
 }
