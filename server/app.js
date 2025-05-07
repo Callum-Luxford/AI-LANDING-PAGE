@@ -4,6 +4,7 @@ const cors = require("cors");
 const path = require("path");
 const compression = require("compression");
 const videoRoutes = require("./routes/videoRoutes");
+const translationsRoutes = require("./routes/translationsRoutes");
 
 const app = express();
 
@@ -17,6 +18,9 @@ app.use(compression());
 
 // Serve API Routes
 app.use("/api/video", videoRoutes);
+
+// Serve Translation Routes
+app.use("/api/translations", translationsRoutes);
 
 // Serve Static Files with Caching (CSS, JS, Images)
 app.use(

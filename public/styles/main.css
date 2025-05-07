@@ -81,6 +81,23 @@ video {
 
     backface-visibility: hidden;
     transform-style: preserve-3d;
+
+    white-space: nowrap;
+    /* Prevents text wrapping */
+    flex-wrap: nowrap;
+    /* Prevents stacking of icon/text */
+    min-width: max-content;
+    /* Ensures full width for long text */
+    max-width: 90vw;
+    /* Keeps it responsive on mobile */
+    justify-content: center;
+    /* Ensures text + icon stay centered */
+}
+
+.chat-button span {
+    font-size: var(--font-size-xl);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @media (max-width: 768px) {
@@ -238,7 +255,7 @@ video {
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid var(--button-border-clr, rgba(255, 255, 255, 0.3));
     color: var(--button-clr, white);
-    padding: 12px 20px;
+    padding: 12px 12px;
     font-size: var(--font-size-md);
     font-weight: 700;
     border-radius: 30px;
@@ -332,4 +349,28 @@ button:hover {
 
 .close-overlay-button img:hover {
     transform: rotate(90deg);
+}
+
+
+/* RTL ------------------------------------------------------------------ */
+/* RTL support for Arabic ----------------------------------------------- */
+/* RTL ------------------------------------------------------------------ */
+body.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+body.rtl .chat-button {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+body.rtl .overlay-buttons {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    text-align: right;
+}
+
+body.rtl .overlay-text-content {
+    text-align: right;
 }

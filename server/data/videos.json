@@ -1,6 +1,11 @@
 {
   "onew3rld": {
-    "videoUrl": "/assets/videos/onew3rld.mp4",
+    "videoUrl": {
+      "en": "/assets/videos/onew3rld.mp4",
+      "fr": "/assets/videos/onew3rld.mp4",
+      "es": "/assets/videos/onew3rld.mp4",
+      "ar": "/assets/videos/the-collection-paris.mp4"
+    },
     "chatLink": "https://chat.onew3rld.ai/org/AI",
     "teamLink": "https://chat.onew3rld.ai/org/AI",
     "replayLink": "?id=onew3rld",
@@ -17,7 +22,12 @@
   },
 
   "the-collection-paris": {
-    "videoUrl": "/assets/videos/the-collection-paris.mp4",
+    "videoUrl": {
+      "en": "/assets/videos/the-collection-paris.mp4",
+      "fr": "/assets/videos/the-collection-paris.mp4",
+      "es": "/assets/videos/the-collection-paris.mp4",
+      "ar": "/assets/videos/the-collection-paris.mp4"
+    },
     "chatLink": "https://chat.onew3rld.ai/org/Automobiles",
     "teamLink": "https://chat.onew3rld.ai/org/Automobiles",
     "replayLink": "?id=the-collection-paris",
@@ -34,7 +44,12 @@
   },
 
   "stonebond": {
-    "videoUrl": "/assets/videos/stonebond.mp4",
+    "videoUrl": {
+      "en": "/assets/videos/stonebond.mp4",
+      "fr": "/assets/videos/stonebond.mp4",
+      "es": "/assets/videos/stonebond.mp4",
+      "ar": "/assets/videos/stonebond.mp4"
+    },
     "chatLink": "https://chat.onew3rld.ai/org/PropertyDevelopers",
     "teamLink": "https://chat.onew3rld.ai/org/PropertyDevelopers",
     "replayLink": "?id=stonebond",
@@ -51,7 +66,12 @@
   },
 
   "monaco-occasions": {
-    "videoUrl": "/assets/videos/monaco-occasions.mp4",
+    "videoUrl": {
+      "en": "/assets/videos/monaco-occasions.mp4",
+      "fr": "/assets/videos/monaco-occasions.mp4",
+      "es": "/assets/videos/monaco-occasions.mp4",
+      "ar": "/assets/videos/monaco-occasions.mp4"
+    },
     "chatLink": "https://chat.onew3rld.ai/org/AUTOMOTIVE/chat/88be94exejeo9q4",
     "teamLink": "https://chat.onew3rld.ai/org/AUTOMOTIVE",
     "replayLink": "?id=monaco-occasions",
@@ -68,7 +88,12 @@
   },
 
   "moravia": {
-    "videoUrl": "/assets/videos/moravia.mp4",
+    "videoUrl": {
+      "en": "/assets/videos/moravia.mp4",
+      "fr": "/assets/videos/moravia.mp4",
+      "es": "/assets/videos/moravia.mp4",
+      "ar": "/assets/videos/moravia.mp4"
+    },
     "chatLink": "https://chat.onew3rld.ai/org/YACHTING/chat/5n6g90p8wzgm0w1",
     "teamLink": "https://chat.onew3rld.ai/org/YACHTING",
     "replayLink": "?id=moravia",
@@ -86,7 +111,12 @@
   },
 
   "hotel-de-paris": {
-    "videoUrl": "/assets/videos/hotel-de-paris.mp4",
+    "videoUrl": {
+      "en": "/assets/videos/hotel-de-paris.mp4",
+      "fr": "/assets/videos/hotel-de-paris.mp4",
+      "es": "/assets/videos/hotel-de-paris.mp4",
+      "ar": "/assets/videos/hotel-de-paris.mp4"
+    },
     "chatLink": "https://chat.onew3rld.ai/org/sbm-group/chat/e6h5xh0oqq0zjxb",
     "teamLink": "https://chat.onew3rld.ai/org/sbm-group",
     "replayLink": "?id=hotel-de-paris",
@@ -104,7 +134,12 @@
   },
 
   "yacht-broker": {
-    "videoUrl": "/assets/videos/yacht-broker.mp4",
+    "videoUrl": {
+      "en": "/assets/videos/yacht-broker.mp4",
+      "fr": "/assets/videos/yacht-broker.mp4",
+      "es": "/assets/videos/yacht-broker.mp4",
+      "ar": "/assets/videos/yacht-broker.mp4"
+    },
     "chatLink": "https://chat.onew3rld.ai/org/yacht-broker/chat/2q0t28unwowdr9n",
     "teamLink": "https://chat.onew3rld.ai/org/yacht-broker",
     "replayLink": "?id=yacht-broker",
@@ -122,7 +157,12 @@
   },
 
   "robb-report": {
-    "videoUrl": "/assets/videos/robb-report.mp4",
+    "videoUrl": {
+      "en": "/assets/videos/robb-report.mp4",
+      "fr": "/assets/videos/robb-report.mp4",
+      "es": "/assets/videos/robb-report.mp4",
+      "ar": "/assets/videos/robb-report.mp4"
+    },
     "chatLink": "https://chat.onew3rld.ai/org/PUBLICATION/chat/42g9fw62sz8ioh6",
     "teamLink": "https://chat.onew3rld.ai/org/PUBLICATION",
     "replayLink": "?id=robb-report",

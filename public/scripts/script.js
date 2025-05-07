@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const videoId = getVideoIdFromURL();
+  const lang = new URLSearchParams(window.location.search).get("lang") || "en";
 
   if (!videoId) {
     redirectTo404();
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (!data) return;
 
   applyBranding(data);
+  applyTranslations(lang); // Call new function
   initializeVideoPlayer(data);
   handleOverlayEvents(data);
 });
@@ -21,7 +23,9 @@ function getVideoIdFromURL() {
 
 async function loadVideoData(videoId) {
   try {
-    const response = await fetch(`/api/video/${videoId}`);
+    const lang =
+      new URLSearchParams(window.location.search).get("lang") || "en";
+    const response = await fetch(`/api/video/${videoId}?lang=${lang}`);
     const data = await response.json();
 
     if (data.error) {
@@ -87,7 +91,7 @@ function handleOverlayEvents(data) {
   chatButton.addEventListener("click", () => {
     overlay.classList.add("show");
 
-    // ✅ Hide chat button
+    // Hide chat button
     chatButton.classList.remove("show", "pulse");
     void chatButton.offsetWidth; // force reflow
     chatButton.classList.add("hidden");
@@ -99,7 +103,7 @@ function handleOverlayEvents(data) {
     overlay.classList.remove("show");
     videoPlayer.play();
 
-    // ✅ Show chat button again
+    // Show chat button again
     chatButton.classList.remove("hidden");
     void chatButton.offsetWidth;
     chatButton.classList.add("show", "pulse");
@@ -135,7 +139,10 @@ function applyBranding(data) {
   if (data.buttonColor)
     root.style.setProperty("--button-clr", data.buttonColor);
   if (data.buttonHoverFontColor)
-    root.style.setProperty("--button-hover-font-clr", data.buttonHoverFontColor)
+    root.style.setProperty(
+      "--button-hover-font-clr",
+      data.buttonHoverFontColor
+    );
   if (data.buttonBorderColor)
     root.style.setProperty("--button-border-clr", data.buttonBorderColor);
   if (data.buttonHoverBg)
@@ -171,3 +178,22 @@ console.log(
     "--font-secondary-theme"
   )
 );
+
+async function applyTranslations(lang = "en") {
+  try {
+    const response = await fetch("/api/translations");
+    const translations = await response.json();
+    const t = translations[lang] || translations["en"];
+
+    // Update UI text content
+    document.getElementById("chatButtonText").textContent = t.popUpChat;
+    document.querySelector(".overlay-text-content h2").textContent = t.title;
+    document.querySelector(".overlay-text-content p").textContent = t.subtitle;
+    document.getElementById("chatOverlayButton").textContent = t.chat;
+    document.getElementById("teamOverlayButton").textContent = t.team;
+    document.getElementById("replayButton").textContent = t.replay;
+    document.querySelector(".footer-text").textContent = t.footer;
+  } catch (err) {
+    console.error("Translation load error:", err);
+  }
+}
