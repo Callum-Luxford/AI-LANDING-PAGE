@@ -28,7 +28,7 @@
       "es": "/assets/videos/the-collection-paris.mp4",
       "ar": "/assets/videos/the-collection-paris.mp4"
     },
-    "chatLink": "https://chat.onew3rld.ai/org/Automobiles",
+    "chatLink": "https://chat.onew3rld.ai/org/Automobiles/chat/5lj0711v9781juo",
     "teamLink": "https://chat.onew3rld.ai/org/Automobiles",
     "replayLink": "?id=the-collection-paris",
     "logo": "/assets/images/TCP-LOGO.png",
@@ -50,7 +50,7 @@
       "es": "/assets/videos/stonebond.mp4",
       "ar": "/assets/videos/stonebond.mp4"
     },
-    "chatLink": "https://chat.onew3rld.ai/org/PropertyDevelopers",
+    "chatLink": "https://chat.onew3rld.ai/org/PropertyDevelopers/chat/63bzdh88b5s1mq4",
     "teamLink": "https://chat.onew3rld.ai/org/PropertyDevelopers",
     "replayLink": "?id=stonebond",
     "logo": "/assets/images/stonebond-logo.png",
@@ -169,6 +169,28 @@
     "logo": "/assets/images/robb-report-logo.png",
     "logoSize": "350px",
     "themeColor": "rgba(25, 29, 40, 0.75)",
+    "buttonColor": "white",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.25)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#78a7ff",
+    "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)"
+  },
+
+  "desert-chill": {
+    "videoUrl": {
+      "en": "/assets/videos/desert-chill.mp4",
+      "fr": "/assets/videos/desert-chill.mp4",
+      "es": "/assets/videos/desert-chill.mp4",
+      "ar": "/assets/videos/desert-chill.mp4"
+    },
+    "chatLink": "https://chat.onew3rld.ai/org/desert-chill",
+    "teamLink": "https://chat.onew3rld.ai/org/desert-chill",
+    "replayLink": "?id=desert-chill",
+    "logo": "/assets/images/desert-chill-logo.png",
+    "logoSize": "250px",
+    "themeColor": "rgba(33, 183, 236, 0.75)",
     "buttonColor": "white",
     "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
     "buttonHoverBg": "rgba(255, 255, 255, 0.25)",
