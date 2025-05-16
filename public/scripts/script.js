@@ -109,12 +109,15 @@ function handleOverlayEvents(data) {
     chatButton.classList.add("show", "pulse");
   });
 
+  const currentLang =
+    new URLSearchParams(window.location.search).get("lang") || "en";
+
   document.getElementById("chatOverlayButton").addEventListener("click", () => {
-    window.location.href = data.chatLink;
+    window.location.href = `${data.chatLink}?lang=${currentLang}`;
   });
 
   document.getElementById("teamOverlayButton").addEventListener("click", () => {
-    window.location.href = data.teamLink;
+    window.location.href = `${data.teamLink}?lang=${currentLang}`;
   });
 
   document.getElementById("replayButton").addEventListener("click", () => {
