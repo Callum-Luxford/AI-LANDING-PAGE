@@ -180,12 +180,12 @@
 
   "desert-chill": {
     "videoUrl": {
-      "en": "/assets/videos/desert-chill.mp4",
+      "en": "/assets/videos/desert-chill-en.mp4",
       "fr": "/assets/videos/desert-chill.mp4",
       "es": "/assets/videos/desert-chill.mp4",
-      "ar": "/assets/videos/desert-chill.mp4"
+      "ar": "/assets/videos/desert-chill-ar.mp4"
     },
-    "chatLink": "https://chat.onew3rld.ai/org/desert-chill",
+    "chatLink": "https://chat.onew3rld.ai/org/desert-chill/chat/aien57qu231962u/card",
     "teamLink": "https://chat.onew3rld.ai/org/desert-chill",
     "replayLink": "?id=desert-chill",
     "logo": "/assets/images/desert-chill-logo.png",
