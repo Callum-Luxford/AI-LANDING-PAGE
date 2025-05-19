@@ -1,17 +1,18 @@
 {
   "onew3rld": {
     "videoUrl": {
-      "en": "/assets/videos/onew3rld.mp4",
-      "fr": "/assets/videos/onew3rld.mp4",
-      "es": "/assets/videos/onew3rld.mp4",
-      "ar": "/assets/videos/onew3rld.mp4"
+      "en": "/assets/videos/onew3rld-en.mp4",
+      "fr": "/assets/videos/onew3rld-en.mp4",
+      "es": "/assets/videos/onew3rld-en.mp4",
+      "ar": "/assets/videos/onew3rld-en.mp4"
     },
-    "chatLink": "https://chat.onew3rld.ai/org/AI",
-    "teamLink": "https://chat.onew3rld.ai/org/AI",
+    "chatLink": "https://chat.onew3rld.ai/org/OneW3ld/chat/om37gf41to60cy3/card",
+    "teamLink": "https://chat.onew3rld.ai/org/OneW3ld",
     "replayLink": "?id=onew3rld",
     "favicon": "/assets/icons/onew3rld-favicon.png",
-    "logo": "/assets/images/onew3rld-logo.png",
-    "themeColor": "rgba(0, 68, 255, 0.75)",
+    "logo": "/assets/images/onew3rld-logo-2.png",
+    "logoSize": "250px",
+    "themeColor": "rgba(0, 29, 181, 0.75)",
     "buttonColor": "white",
     "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
     "buttonHoverBg": "rgba(255, 255, 255, 0.25)",
