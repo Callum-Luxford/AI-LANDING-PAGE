@@ -198,5 +198,27 @@
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#78a7ff",
     "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)"
+  },
+
+  "ht-pawnbrokers": {
+    "videoUrl": {
+      "en": "/assets/videos/ht-pawnbrokers-en.mp4",
+      "fr": "/assets/videos/ht-pawnbrokers-en.mp4",
+      "es": "/assets/videos/ht-pawnbrokers-en.mp4",
+      "ar": "/assets/videos/ht-pawnbrokers-en.mp4"
+    },
+    "chatLink": "https://chat.onew3rld.ai/org/retail/chat/20r975otq3dffcy/card",
+    "teamLink": "https://chat.onew3rld.ai/org/retail",
+    "replayLink": "?id=ht-pawnbrokers",
+    "logo": "/assets/images/h&t-logo.png",
+    "logoSize": "150px",
+    "themeColor": "rgba(0, 45, 107, 0.75)",
+    "buttonColor": "white",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.25)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#78a7ff",
+    "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)"
   }
 }
