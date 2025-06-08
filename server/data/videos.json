@@ -220,5 +220,49 @@
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#78a7ff",
     "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)"
+  },
+
+  "wahl": {
+    "videoUrl": {
+      "en": "/assets/videos/wahl-en.mp4",
+      "fr": "/assets/videos/wahl-en.mp4",
+      "es": "/assets/videos/wahl-en.mp4",
+      "ar": "/assets/videos/wahl-en.mp4"
+    },
+    "chatLink": "https://chat.onew3rld.ai/org/WAHLuk/chat/xv9sm2tp8977u55/card",
+    "teamLink": "https://chat.onew3rld.ai/org/WAHLuk",
+    "replayLink": "?id=wahl",
+    "logo": "/assets/images/wahl-logo.png",
+    "logoSize": "200px",
+    "themeColor": "rgba(252, 200, 0, 0.75)",
+    "buttonColor": "white",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.25)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#78a7ff",
+    "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)"
+  },
+
+  "wahl-academy": {
+    "videoUrl": {
+      "en": "/assets/videos/wahl-training-en.mp4",
+      "fr": "/assets/videos/wahl-training-en.mp4",
+      "es": "/assets/videos/wahl-training-en.mp4",
+      "ar": "/assets/videos/wahl-training-en.mp4"
+    },
+    "chatLink": "https://chat.onew3rld.ai/org/WAHLuk/chat/xv9sm2tp8977u55/card",
+    "teamLink": "https://chat.onew3rld.ai/org/WAHLuk",
+    "replayLink": "?id=wahl-academy",
+    "logo": "/assets/images/wahl-logo.png",
+    "logoSize": "200px",
+    "themeColor": "rgba(252, 200, 0, 0.75)",
+    "buttonColor": "white",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.25)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#78a7ff",
+    "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)"
   }
 }
