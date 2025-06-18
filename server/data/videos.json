@@ -264,5 +264,28 @@
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#78a7ff",
     "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)"
+  },
+
+  "la-villa": {
+    "videoUrl": {
+      "en": "/assets/videos/la-villa-en.mp4",
+      "fr": "/assets/videos/la-villa-fr.mp4",
+      "es": "/assets/videos/la-villa-en.mp4",
+      "ar": "/assets/videos/la-villa-en.mp4"
+    },
+    "chatLink": "https://chat.onew3rld.ai/org/LaVilla/chat/99sfmb7wq76vl4s/card",
+    "teamLink": "https://chat.onew3rld.ai/org/LaVilla",
+    "replayLink": "?id=la-villa",
+    "logo": "/assets/images/la-villa-logo.png",
+    "logoSize": "250px",
+    "themeColor": "rgba(255, 255, 255, 0.75)",
+    "buttonColor": "#000000",
+    "buttonBorderColor": "rgba(0, 0, 0, 0.3)",
+    "buttonHoverBg": "rgba(0, 0, 0, 0.08)",
+    "buttonHoverBorder": "rgba(0, 0, 0, 0.5)",
+    "buttonHoverFontColor": "#000000",
+    "fontPrimaryColor": "#000000",
+    "fontSecondaryColor": "#000000",
+    "iconFilter": "invert(100%) brightness(120%)"
   }
 }
