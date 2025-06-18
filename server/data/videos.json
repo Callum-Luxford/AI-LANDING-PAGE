@@ -199,5 +199,27 @@
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#78a7ff",
     "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)"
+  },
+
+  "fab-shutters": {
+    "videoUrl": {
+      "en": "/assets/videos/fab-shutters-en.mp4",
+      "fr": "/assets/videos/fab-shutters-en.mp4",
+      "es": "/assets/videos/fab-shutters-en.mp4",
+      "ar": "/assets/videos/fab-shutters-en.mp4"
+    },
+    "chatLink": "https://chat.onew3rld.ai/org/BLINDS/chat/f25137yi4np6gad/card",
+    "teamLink": "https://chat.onew3rld.ai/org/BLINDS",
+    "replayLink": "?id=fab-shutters",
+    "logo": "/assets/images/fab-shutters-logo.png",
+    "logoSize": "250px",
+    "themeColor": "rgba(0, 0, 0, 0.75)",
+    "buttonColor": "#ffffff",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#b3b3b3",
+    "iconFilter": "invert(100%) brightness(120%)"
   }
 }
