@@ -286,5 +286,27 @@
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#b3b3b3",
     "iconFilter": "invert(100%) brightness(120%)"
+  },
+
+  "golf-one": {
+    "videoUrl": {
+      "fr": "/assets/videos/golf-one-en.mp4",
+      "es": "/assets/videos/golf-one-en.mp4",
+      "en": "/assets/videos/golf-one-en.mp4",
+      "ar": "/assets/videos/golf-one-en.mp4"
+    },
+    "chatLink": " https://chat.onew3rld.ai/org/Golf.One/chat/pp9hk8jnu4757l9/card",
+    "teamLink": "https://chat.onew3rld.ai/org/Golf.One",
+    "replayLink": "?id=golf-one",
+    "logo": "/assets/images/golf-one-logo.png",
+    "logoSize": "250px",
+    "themeColor": "rgba(46, 58, 74, 0.75)",
+    "buttonColor": "#ffffff",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#b3b3b3",
+    "iconFilter": "invert(100%) brightness(120%)"
   }
 }
