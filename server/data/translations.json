@@ -9,29 +9,29 @@
     "footer": "Powered by ONEW3RLD"
   },
   "fr": {
-    "popUpChat": "Cliquez pour discuter",
+    "popUpChat": "APPUYEZ POUR DISCUTER",
     "title": "Discutons ensemble!",
     "subtitle": "Choisissez et cliquez sur un bouton ci-dessous",
-    "chat": "Discuter avec moi",
-    "team": "Rencontrer l'équipe",
-    "replay": "Revoir la vidéo",
+    "chat": "DISCUTEZ AVEC MOI",
+    "team": "DÉCOUVREZ L'ÉQUIPE",
+    "replay": "REJOUER LA VIDÉO",
     "footer": "Propulsé par ONEW3RLD"
   },
   "es": {
-    "popUpChat": "Haz clic para chatear",
+    "popUpChat": "TOCA PARA CHATEAR",
     "title": "¡Hablemos!",
     "subtitle": "Elige y haz clic en un botón abajo",
-    "chat": "Chatea conmigo",
-    "team": "Conoce al equipo",
-    "replay": "Reproducir video",
+    "chat": "CHATAME",
+    "team": "CONOCE AL EQUIPO",
+    "replay": "REPRODUCIR VÍDEO",
     "footer": "Impulsado por ONEW3RLD"
   },
   "ar": {
     "popUpChat": "انقر للدردشة",
     "title": "هيا نتحدث!",
     "subtitle": "اختر واضغط على زر أدناه",
-    "chat": "ابدأ المحادثة",
-    "team": "قابل الفريق",
+    "chat": "تحدث معي",
+    "team": "تعرف على الفريق",
     "replay": "إعادة تشغيل الفيديو",
     "footer": "مشغل بواسطة ONEW3RLD"
   }

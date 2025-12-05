@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (!data) return;
 
   applyBranding(data);
-  applyTranslations(lang); // Call new function
+  applyTranslations(lang, data); // Call new function
   initializeVideoPlayer(data);
   handleOverlayEvents(data);
 });
@@ -182,7 +182,7 @@ console.log(
   )
 );
 
-async function applyTranslations(lang = "en") {
+async function applyTranslations(lang = "en", videoData = null) {
   try {
     const response = await fetch("/api/translations");
     const translations = await response.json();
@@ -192,8 +192,23 @@ async function applyTranslations(lang = "en") {
     document.getElementById("chatButtonText").textContent = t.popUpChat;
     document.querySelector(".overlay-text-content h2").textContent = t.title;
     document.querySelector(".overlay-text-content p").textContent = t.subtitle;
-    document.getElementById("chatOverlayButton").textContent = t.chat;
-    document.getElementById("teamOverlayButton").textContent = t.team;
+    
+    // --- CHAT BUTTON TEXT ---
+    if (videoData && videoData.chatText && videoData.chatText[lang]) {
+      document.getElementById("chatOverlayButton").textContent =
+        videoData.chatText[lang];
+    } else {
+      document.getElementById("chatOverlayButton").textContent = t.chat;
+    }
+
+    // --- TEAM BUTTON TEXT ---
+    if (videoData && videoData.teamText && videoData.teamText[lang]) {
+      document.getElementById("teamOverlayButton").textContent =
+        videoData.teamText[lang];
+    } else {
+      document.getElementById("teamOverlayButton").textContent = t.team;
+    }
+
     document.getElementById("replayButton").textContent = t.replay;
     document.querySelector(".footer-text").textContent = t.footer;
   } catch (err) {

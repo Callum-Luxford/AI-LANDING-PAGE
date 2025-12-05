@@ -243,5 +243,63 @@
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#b3b3b3",
     "iconFilter": "invert(100%) brightness(120%)"
+  },
+
+  "essexsupercarclub": {
+    "videoUrl": {
+      "fr": "/assets/videos/essexsupercarclub-en.mp4",
+      "es": "/assets/videos/essexsupercarclub-en.mp4",
+      "en": "/assets/videos/essexsupercarclub-en.mp4",
+      "ar": "/assets/videos/essexsupercarclub-en.mp4"
+    },
+    "chatLink": "https://chat.onew3rld.ai/org/essexsupercarclub/chat/3bu1c0h6410j9un",
+    "teamLink": "https://chat.onew3rld.ai/org/essexsupercarclub",
+    "replayLink": "?id=essexsupercarclub",
+    "logo": "/assets/images/essexsupercarclub-logo.png",
+    "logoSize": "250px",
+    "themeColor": "rgba(0, 0, 0, 0.75)",
+    "buttonColor": "#ffffff",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#b3b3b3",
+    "iconFilter": "invert(100%) brightness(120%)",
+
+    "teamText": {
+      "fr": "DÉCOUVREZ LE CLUB",
+      "es": "EXPLORA EL CLUB",
+      "en": "EXPLORE THE CLUB",
+      "ar": "استكشف النادي"
+    }
+  },
+
+  "essexsupercarclub1": {
+    "videoUrl": {
+      "fr": "/assets/videos/essexsupercarclub1-en.mp4",
+      "es": "/assets/videos/essexsupercarclub1-en.mp4",
+      "en": "/assets/videos/essexsupercarclub1-en.mp4",
+      "ar": "/assets/videos/essexsupercarclub1-en.mp4"
+    },
+    "chatLink": "https://chat.onew3rld.ai/org/essexsupercarclub/chat/3bu1c0h6410j9un",
+    "teamLink": "https://chat.onew3rld.ai/org/essexsupercarclub",
+    "replayLink": "?id=essexsupercarclub1",
+    "logo": "/assets/images/essexsupercarclub-logo.png",
+    "logoSize": "250px",
+    "themeColor": "rgba(0, 0, 0, 0.75)",
+    "buttonColor": "#ffffff",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#b3b3b3",
+    "iconFilter": "invert(100%) brightness(120%)",
+
+    "teamText": {
+      "fr": "DÉCOUVREZ LE CLUB",
+      "es": "EXPLORA EL CLUB",
+      "en": "EXPLORE THE CLUB",
+      "ar": "استكشف النادي"
+    }
   }
 }
