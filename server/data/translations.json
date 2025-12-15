@@ -34,5 +34,14 @@
     "team": "تعرف على الفريق",
     "replay": "إعادة تشغيل الفيديو",
     "footer": "مشغل بواسطة ONEW3RLD"
+  },
+  "it": {
+    "popUpChat": "TOCCA PER CHATTARE",
+    "title": "Parliamo!",
+    "subtitle": "Scegli e tocca un pulsante qui sotto",
+    "chat": "TOCCA PER CHATTARE",
+    "team": "INCONTRA IL TEAM",
+    "replay": "RIPRODUCI IL VIDEO",
+    "footer": "Offerto da ONEW3RLD"
   }
 }
