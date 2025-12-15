@@ -250,7 +250,7 @@ video {
     }
 }
 
-.overlay-buttons button,
+/* .overlay-buttons button,
 .replay-button {
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid var(--button-border-clr, rgba(255, 255, 255, 0.3));
@@ -268,6 +268,33 @@ video {
     text-align: center;
     white-space: nowrap;
     height: auto;
+} */
+
+.overlay-buttons button,
+.replay-button {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--button-border-clr, rgba(255, 255, 255, 0.3));
+    color: var(--button-clr, white);
+    padding: 12px 12px;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+.overlay-buttons {
+    flex-wrap: nowrap;
+}
+
+.overlay-buttons button {
+    flex: 1 1 0;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .replay-button {
