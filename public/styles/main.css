@@ -256,18 +256,25 @@ video {
     border: 1px solid var(--button-border-clr, rgba(255, 255, 255, 0.3));
     color: var(--button-clr, white);
     padding: 12px 12px;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
     font-weight: 700;
     border-radius: 30px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: all 0.2s ease-in-out;
-    flex: 1 1 auto;
-    min-width: 140px;
-    max-width: 180px;
     text-align: center;
+}
+
+.overlay-buttons {
+    flex-wrap: nowrap;
+}
+
+.overlay-buttons button {
+    flex: 1 1 0;
+    min-width: 0;
     white-space: nowrap;
-    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .replay-button {
