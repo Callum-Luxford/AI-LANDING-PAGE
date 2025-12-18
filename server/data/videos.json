@@ -353,5 +353,27 @@
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#b3b3b3",
     "iconFilter": "invert(100%) brightness(120%)"
+  },
+  "hospitality": {
+    "videoUrl": {
+      "fr": "/assets/videos/hospitality-en.mp4",
+      "es": "/assets/videos/hospitality-en.mp4",
+      "en": "/assets/videos/hospitality-en.mp4",
+      "ar": "/assets/videos/hospitality-en.mp4",
+      "it": "/assets/videos/hospitality-en.mp4"
+    },
+    "chatLink": "https://chat.onew3rld.ai/org/hospitality",
+    "teamLink": "https://chat.onew3rld.ai/org/hospitality",
+    "replayLink": "?id=hospitality",
+    "logo": "/assets/images/onew3rld-logo-3.png",
+    "logoSize": "250px",
+    "themeColor": "rgba(0, 0, 0, 0.75)",
+    "buttonColor": "#ffffff",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#b3b3b3",
+    "iconFilter": "invert(100%) brightness(120%)"
   }
 }
