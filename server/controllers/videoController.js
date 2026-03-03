@@ -32,7 +32,7 @@ const getVideoDetails = (req, res) => {
       }
 
       // Add full host path
-      videoData.videoUrl = `https://${req.get("host")}${selectedVideoUrl}`;
+      videoData.videoUrl = `http://${req.get("host")}${selectedVideoUrl}`;
 
       return res.json(videoData);
     } catch (parseError) {

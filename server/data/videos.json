@@ -375,5 +375,29 @@
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#b3b3b3",
     "iconFilter": "invert(100%) brightness(120%)"
+  },
+
+  "goingdry": {
+    "videoUrl": {
+      "fr": "/assets/videos/goingdry-en.mp4",
+      "es": "/assets/videos/goingdry-en.mp4",
+      "en": "/assets/videos/goingdry-en.mp4",
+      "ar": "/assets/videos/goingdry-en.mp4",
+      "it": "/assets/videos/goingdry-en.mp4"
+    },
+    "chatLink": "https://chat.onew3rld.ai/org/goingdry/chat/y95z9s6wext3j5d",
+    "teamLink": "https://chat.onew3rld.ai/org/goingdry/chat/y95z9s6wext3j5d",
+    "replayLink": "?id=hospitality",
+    "logo": "/assets/images/goingdry-logo.png",
+    "logoSize": "250px",
+    "themeColor": "rgba(0, 0, 0, 0.75)",
+    "buttonColor": "#ffffff",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#b3b3b3",
+    "iconFilter": "invert(100%) brightness(120%)",
+    "teamOverlayButton": "MEET THE CAST"
   }
 }
