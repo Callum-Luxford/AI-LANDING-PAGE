@@ -389,8 +389,8 @@
     "teamLink": "https://chat.onew3rld.ai/org/goingdry/chat/y95z9s6wext3j5d",
     "replayLink": "?id=hospitality",
     "logo": "/assets/images/goingdry-logo.png",
-    "logoSize": "250px",
-    "themeColor": "rgba(0, 0, 0, 0.75)",
+    "logoSize": "200px",
+    "themeColor": "rgba(34, 34, 34, 0.75)",
     "buttonColor": "#ffffff",
     "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
     "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
@@ -398,6 +398,6 @@
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#b3b3b3",
     "iconFilter": "invert(100%) brightness(120%)",
-    "teamOverlayButton": "MEET THE CAST"
+    "teamText": { "en": "MEET THE CAST" }
   }
 }
