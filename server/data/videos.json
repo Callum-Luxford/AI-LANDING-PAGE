@@ -301,5 +301,28 @@
       "en": "EXPLORE THE CLUB",
       "ar": "استكشف النادي"
     }
+  },
+
+  "hairrevisitedai": {
+    "videoUrl": {
+      "fr": "/assets/videos/hairrevisited.mp4",
+      "es": "/assets/videos/hairrevisited.mp4",
+      "en": "/assets/videos/hairrevisited.mp4",
+      "ar": "/assets/videos/hairrevisited.mp4",
+      "it": "/assets/videos/hairrevisited.mp4"
+    },
+    "chatLink": "https://chat.onew3rld.ai/org/HairRevisitedAI/chat/uqxhnmdje782yi9",
+    "teamLink": "https://chat.onew3rld.ai/org/HairRevisitedAI",
+    "replayLink": "?id=hospitality",
+    "logo": "/assets/images/hairrevisited-logo.jpeg",
+    "logoSize": "200px",
+    "themeColor": "rgba(0, 0, 0, 1)",
+    "buttonColor": "#ffffff",
+    "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
+    "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
+    "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#b3b3b3",
+    "iconFilter": "invert(100%) brightness(120%)"
   }
 }
