@@ -12,16 +12,16 @@
     "favicon": "/assets/icons/onew3rld-favicon.png",
     "logo": "/assets/images/onew3rld-logo-2.png",
     "logoSize": "250px",
-    "themeColor": "rgba(0, 0, 0, 0.75)",
     "buttonColor": "white",
     "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
     "buttonHoverBg": "rgba(255, 255, 255, 0.25)",
     "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#78a7ff",
-    "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)"
+    "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)",
+    "overlayBackgroundColor": "rgba(0, 0, 0, 0.75)"
   },
-
+  
   "the-collection-paris": {
     "videoUrl": {
       "en": "/assets/videos/the-collection-paris.mp4",
@@ -34,14 +34,14 @@
     "replayLink": "?id=the-collection-paris",
     "logo": "/assets/images/TCP-LOGO.png",
     "logoSize": "200px",
-    "themeColor": "rgba(0, 0, 0, 0.75)",
     "buttonColor": "#ffffff",
     "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
     "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
     "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#b3b3b3",
-    "iconFilter": "invert(100%) brightness(120%)"
+    "iconFilter": "invert(100%) brightness(120%)",
+    "overlayBackgroundColor": "rgba(0, 0, 0, 0.75)"
   },
 
   "stonebond": {
@@ -56,14 +56,14 @@
     "replayLink": "?id=stonebond",
     "logo": "/assets/images/stonebond-logo.png",
     "logoSize": "200px",
-    "themeColor": "rgba(161, 1, 255, 0.75)",
     "buttonColor": "#ffffff",
     "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
     "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
     "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#b3b3b3",
-    "iconFilter": "invert(100%) brightness(120%)"
+    "iconFilter": "invert(100%) brightness(120%)",
+    "overlayBackgroundColor": "rgba(161, 1, 255, 0.75)"
   },
 
   "monaco-occasions": {
@@ -78,14 +78,14 @@
     "replayLink": "?id=monaco-occasions",
     "logo": "/assets/images/monaco-occasions-logo.png",
     "logoSize": "350px",
-    "themeColor": "rgba(0, 0, 0, 0.75)",
     "buttonColor": "#ffffff",
     "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
     "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
     "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#b3b3b3",
-    "iconFilter": "invert(100%) brightness(120%)"
+    "iconFilter": "invert(100%) brightness(120%)",
+    "overlayBackgroundColor": "rgba(0, 0, 0, 0.75)"
   },
 
   "moravia": {
@@ -100,7 +100,6 @@
     "replayLink": "?id=moravia",
     "logo": "/assets/images/moravia-logo.png",
     "logoSize": "200px",
-    "themeColor": "rgba(255, 255, 255, 0.75)",
     "buttonColor": "#000000",
     "buttonBorderColor": "rgba(0, 0, 0, 0.3)",
     "buttonHoverBg": "rgba(0, 0, 0, 0.08)",
@@ -108,7 +107,8 @@
     "buttonHoverFontColor": "#000000",
     "fontPrimaryColor": "#000000",
     "fontSecondaryColor": "#000000",
-    "iconFilter": "invert(100%) brightness(120%)"
+    "iconFilter": "invert(100%) brightness(120%)",
+    "overlayBackgroundColor": "rgba(255, 255, 255, 0.75)"
   },
 
   "hotel-de-paris": {
@@ -123,7 +123,6 @@
     "replayLink": "?id=hotel-de-paris",
     "logo": "/assets/images/hotel-de-paris-logo.png",
     "logoSize": "350px",
-    "themeColor": "rgba(255, 255, 255, 0.75)",
     "buttonColor": "#000000",
     "buttonBorderColor": "rgba(0, 0, 0, 0.3)",
     "buttonHoverBg": "rgba(0, 0, 0, 0.08)",
@@ -131,7 +130,8 @@
     "buttonHoverFontColor": "#000000",
     "fontPrimaryColor": "#000000",
     "fontSecondaryColor": "#000000",
-    "iconFilter": "invert(100%) brightness(120%)"
+    "iconFilter": "invert(100%) brightness(120%)",
+    "overlayBackgroundColor": "rgba(255, 255, 255, 0.75)"
   },
 
   "yacht-broker": {
@@ -146,7 +146,6 @@
     "replayLink": "?id=yacht-broker",
     "logo": "/assets/images/yacht-broker-logo.png",
     "logoSize": "350px",
-    "themeColor": "rgba(255, 255, 255, 0.75)",
     "buttonColor": "#0E2B42",
     "buttonBorderColor": "rgba(0, 0, 0, 0.3)",
     "buttonHoverBg": "rgba(0, 0, 0, 0.08)",
@@ -154,7 +153,8 @@
     "buttonHoverFontColor": "#0E2B42",
     "fontPrimaryColor": "#0E2B42",
     "fontSecondaryColor": "#0E2B42",
-    "iconFilter": "invert(100%) brightness(120%)"
+    "iconFilter": "invert(100%) brightness(120%)",
+    "overlayBackgroundColor": "rgba(255, 255, 255, 0.75)"
   },
 
   "robb-report": {
@@ -169,14 +169,14 @@
     "replayLink": "?id=robb-report",
     "logo": "/assets/images/robb-report-logo.png",
     "logoSize": "350px",
-    "themeColor": "rgba(25, 29, 40, 0.75)",
     "buttonColor": "white",
     "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
     "buttonHoverBg": "rgba(255, 255, 255, 0.25)",
     "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#78a7ff",
-    "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)"
+    "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)",
+    "overlayBackgroundColor": "rgba(25, 29, 40, 0.75)"
   },
 
   "desert-chill": {
@@ -191,14 +191,14 @@
     "replayLink": "?id=desert-chill",
     "logo": "/assets/images/desert-chill-logo-3.png",
     "logoSize": "250px",
-    "themeColor": "rgba(0, 0, 0, 0.75)",
     "buttonColor": "white",
     "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
     "buttonHoverBg": "rgba(255, 255, 255, 0.25)",
     "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#78a7ff",
-    "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)"
+    "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)",
+    "overlayBackgroundColor": "rgba(0, 0, 0, 0.75)"
   },
 
   "fab-shutters": {
@@ -213,14 +213,14 @@
     "replayLink": "?id=fab-shutters",
     "logo": "/assets/images/fab-shutters-logo.png",
     "logoSize": "250px",
-    "themeColor": "rgba(0, 0, 0, 0.75)",
     "buttonColor": "#ffffff",
     "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
     "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
     "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#b3b3b3",
-    "iconFilter": "invert(100%) brightness(120%)"
+    "iconFilter": "invert(100%) brightness(120%)",
+    "overlayBackgroundColor": "rgba(0, 0, 0, 0.75)"
   },
 
   "safwat-cars": {
@@ -235,14 +235,14 @@
     "replayLink": "?id=safwat-cars",
     "logo": "/assets/images/safwat-logo.png",
     "logoSize": "250px",
-    "themeColor": "rgba(0, 0, 0, 0.75)",
     "buttonColor": "#ffffff",
     "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
     "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
     "buttonHoverBorder": "rgba(255, 255, 255, 0.5)",
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#b3b3b3",
-    "iconFilter": "invert(100%) brightness(120%)"
+    "iconFilter": "invert(100%) brightness(120%)",
+    "overlayBackgroundColor": "rgba(0, 0, 0, 0.75)"
   },
 
   "essexsupercarclub": {
@@ -257,7 +257,6 @@
     "replayLink": "?id=essexsupercarclub",
     "logo": "/assets/images/essexsupercarclub-logo.png",
     "logoSize": "250px",
-    "themeColor": "rgba(0, 0, 0, 0.75)",
     "buttonColor": "#ffffff",
     "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
     "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
@@ -265,13 +264,13 @@
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#b3b3b3",
     "iconFilter": "invert(100%) brightness(120%)",
-
     "teamText": {
       "fr": "DÉCOUVREZ LE CLUB",
       "es": "EXPLORA EL CLUB",
       "en": "EXPLORE THE CLUB",
       "ar": "استكشف النادي"
-    }
+    },
+    "overlayBackgroundColor": "rgba(0, 0, 0, 0.75)"
   },
 
   "essexsupercarclub1": {
@@ -286,7 +285,6 @@
     "replayLink": "?id=essexsupercarclub1",
     "logo": "/assets/images/essexsupercarclub-logo.png",
     "logoSize": "250px",
-    "themeColor": "rgba(0, 0, 0, 0.75)",
     "buttonColor": "#ffffff",
     "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
     "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
@@ -294,13 +292,13 @@
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#b3b3b3",
     "iconFilter": "invert(100%) brightness(120%)",
-
     "teamText": {
       "fr": "DÉCOUVREZ LE CLUB",
       "es": "EXPLORA EL CLUB",
       "en": "EXPLORE THE CLUB",
       "ar": "استكشف النادي"
-    }
+    },
+    "overlayBackgroundColor": "rgba(0, 0, 0, 0.75)"
   },
 
   "hairrevisitedai": {
@@ -316,7 +314,7 @@
     "replayLink": "?id=hospitality",
     "logo": "/assets/images/hairrevisited-logo.jpeg",
     "logoSize": "200px",
-    "themeColor": "rgba(0, 0, 0, 1)",
+    "overlayBackgroundColor": "rgba(0, 0, 0, 1)",
     "buttonColor": "#ffffff",
     "buttonBorderColor": "rgba(255, 255, 255, 0.3)",
     "buttonHoverBg": "rgba(255, 255, 255, 0.08)",
@@ -339,7 +337,10 @@
     "replayLink": "?id=essexwigcentre",
     "logo": "/assets/images/essex-wig-centre-2-removebg-preview.png",
     "logoSize": "250px",
-    "themeColor": "rgba(255, 255, 255, 0.9)",
+    "overlayBackgroundColor": "rgba(255, 255, 255, 1)",
+    "overlayBlurEnabled": false,
+    "overlayBlurBackground": "transparent",
+    "closeIconFilter": "brightness(0) invert(0)",
     "buttonColor": "#A06836",
     "buttonBorderColor": "rgba(160, 104, 54, 1)",
     "buttonHoverBg": "rgba(160, 104, 54, 0.1)",

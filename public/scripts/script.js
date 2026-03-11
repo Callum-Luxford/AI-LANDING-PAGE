@@ -136,30 +136,103 @@ function applyBranding(data) {
   const root = document.documentElement;
 
   const logoElement = document.querySelector(".overlay-logo");
-  logoElement.src = data.logo || "/assets/images/logo.png";
+  const overlayBlurElement = document.querySelector(".overlay-blur");
+  const closeOverlayIcon = document.querySelector(".close-overlay-button img");
 
-  if (data.themeColor) root.style.setProperty("--overlay-clr", data.themeColor);
-  if (data.buttonColor)
+  if (logoElement) {
+    logoElement.src = data.logo || "/assets/images/logo.png";
+  }
+
+  // -----------------------------
+  // Existing branding options
+  // -----------------------------
+  if (data.themeColor) {
+    root.style.setProperty("--overlay-clr", data.themeColor);
+  }
+
+  if (data.buttonColor) {
     root.style.setProperty("--button-clr", data.buttonColor);
-  if (data.buttonHoverFontColor)
+  }
+
+  if (data.buttonHoverFontColor) {
     root.style.setProperty(
       "--button-hover-font-clr",
-      data.buttonHoverFontColor
+      data.buttonHoverFontColor,
     );
-  if (data.buttonBorderColor)
-    root.style.setProperty("--button-border-clr", data.buttonBorderColor);
-  if (data.buttonHoverBg)
-    root.style.setProperty("--button-hover-bg", data.buttonHoverBg);
-  if (data.buttonHoverBorder)
-    root.style.setProperty("--button-hover-border", data.buttonHoverBorder);
-  if (data.fontPrimaryColor)
-    root.style.setProperty("--font-primary-theme", data.fontPrimaryColor);
-  if (data.fontSecondaryColor)
-    root.style.setProperty("--font-secondary-theme", data.fontSecondaryColor);
-  if (data.iconFilter) root.style.setProperty("--icon-clr-1", data.iconFilter);
-  if (data.logoSize) root.style.setProperty("--logo-size", data.logoSize);
+  }
 
-  // Set favicon with fallback to default
+  if (data.buttonBorderColor) {
+    root.style.setProperty("--button-border-clr", data.buttonBorderColor);
+  }
+
+  if (data.buttonHoverBg) {
+    root.style.setProperty("--button-hover-bg", data.buttonHoverBg);
+  }
+
+  if (data.buttonHoverBorder) {
+    root.style.setProperty("--button-hover-border", data.buttonHoverBorder);
+  }
+
+  if (data.fontPrimaryColor) {
+    root.style.setProperty("--font-primary-theme", data.fontPrimaryColor);
+  }
+
+  if (data.fontSecondaryColor) {
+    root.style.setProperty("--font-secondary-theme", data.fontSecondaryColor);
+  }
+
+  if (data.iconFilter) {
+    root.style.setProperty("--icon-clr-1", data.iconFilter);
+  }
+
+  if (data.logoSize) {
+    root.style.setProperty("--logo-size", data.logoSize);
+  }
+
+  // -----------------------------
+  // New overlay options
+  // -----------------------------
+
+  // Main overlay background colour
+  if (data.overlayBackgroundColor) {
+    root.style.setProperty("--overlay-bg-clr", data.overlayBackgroundColor);
+
+    // Optional fallback so older CSS using --overlay-clr still works
+    root.style.setProperty("--overlay-clr", data.overlayBackgroundColor);
+  }
+
+  // Blur background tint
+  if (data.overlayBlurBackground) {
+    root.style.setProperty("--overlay-blur-bg", data.overlayBlurBackground);
+  }
+
+  // Blur amount
+  if (data.overlayBlurAmount) {
+    root.style.setProperty("--overlay-blur-amount", data.overlayBlurAmount);
+  }
+
+  // Close icon colour / filter
+  if (data.closeIconFilter) {
+    root.style.setProperty("--close-icon-filter", data.closeIconFilter);
+
+    // Safe direct fallback in case CSS variable is not wired yet
+    if (closeOverlayIcon) {
+      closeOverlayIcon.style.filter = data.closeIconFilter;
+    }
+  }
+
+  // Toggle blur on / off
+  if (overlayBlurElement) {
+    if (data.overlayBlurEnabled === false) {
+      overlayBlurElement.classList.add("disabled");
+    } else {
+      overlayBlurElement.classList.remove("disabled");
+    }
+  }
+
+  // -----------------------------
+  // Favicon
+  // -----------------------------
   const faviconUrl = data.favicon || "/assets/icons/onew3rld-favicon.png";
 
   let faviconLink = document.querySelector("link[rel~='icon']");
@@ -168,6 +241,7 @@ function applyBranding(data) {
     faviconLink.rel = "icon";
     document.head.appendChild(faviconLink);
   }
+
   faviconLink.href = faviconUrl;
 }
 
@@ -178,8 +252,8 @@ function redirectTo404() {
 console.log(
   "Font secondary theme:",
   getComputedStyle(document.documentElement).getPropertyValue(
-    "--font-secondary-theme"
-  )
+    "--font-secondary-theme",
+  ),
 );
 
 async function applyTranslations(lang = "en", videoData = null) {
@@ -192,7 +266,7 @@ async function applyTranslations(lang = "en", videoData = null) {
     document.getElementById("chatButtonText").textContent = t.popUpChat;
     document.querySelector(".overlay-text-content h2").textContent = t.title;
     document.querySelector(".overlay-text-content p").textContent = t.subtitle;
-    
+
     // --- CHAT BUTTON TEXT ---
     if (videoData && videoData.chatText && videoData.chatText[lang]) {
       document.getElementById("chatOverlayButton").textContent =

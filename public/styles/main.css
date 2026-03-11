@@ -1,5 +1,9 @@
 /* ---------------------- THEME COLOR HOOKS ---------------------- */
 :root {
+    --overlay-bg-clr: rgba(0, 68, 255, 0.75);
+    --overlay-blur-bg: rgba(0, 0, 0, 0.3);
+    --overlay-blur-amount: 20px;
+    --close-icon-filter: brightness(0) invert(1);
     --overlay-clr: rgba(0, 68, 255, 0.75);
     --button-clr: white;
     --button-border-clr: rgba(255, 255, 255, 0.3);
@@ -153,7 +157,7 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--overlay-clr, rgba(0, 68, 255, 0.75));
+    background: var(--overlay-bg-clr, rgba(0, 68, 255, 0.75));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,11 +178,17 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: var(--overlay-blur-bg, rgba(0, 0, 0, 0.3));
+    backdrop-filter: blur(var(--overlay-blur-amount, 20px));
+    -webkit-backdrop-filter: blur(var(--overlay-blur-amount, 20px));
     will-change: backdrop-filter;
     z-index: 5;
+}
+
+.overlay-blur.disabled {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
 }
 
 .overlay-content {
@@ -370,7 +380,7 @@ button:hover {
 .close-overlay-button img {
     width: 25px;
     height: 25px;
-    filter: brightness(0) invert(1);
+    filter: var(--close-icon-filter, brightness(0) invert(1));
     transition: transform 0.2s ease;
 }
 
