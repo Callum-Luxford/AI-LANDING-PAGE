@@ -21,7 +21,7 @@
     "iconFilter": "invert(99%) sepia(1%) saturate(0%) hue-rotate(94deg) brightness(104%) contrast(100%)",
     "overlayBackgroundColor": "rgba(0, 0, 0, 0.75)"
   },
-  
+
   "the-collection-paris": {
     "videoUrl": {
       "en": "/assets/videos/the-collection-paris.mp4",
@@ -343,7 +343,7 @@
     "closeIconFilter": "brightness(0) invert(0)",
     "buttonColor": "#A06836",
     "buttonBorderColor": "rgba(160, 104, 54, 1)",
-    "buttonHoverBg": "rgba(160, 104, 54, 0.1)",
+    "buttonHoverBg": "rgba(160, 104, 54, 0.8)",
     "buttonHoverBorder": "rgba(160, 104, 54, 1)",
     "fontPrimaryColor": "#A06836",
     "fontSecondaryColor": "#9C7A5C",
