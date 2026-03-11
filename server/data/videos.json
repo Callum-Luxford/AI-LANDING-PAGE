@@ -324,5 +324,28 @@
     "fontPrimaryColor": "#ffffff",
     "fontSecondaryColor": "#b3b3b3",
     "iconFilter": "invert(100%) brightness(120%)"
+  },
+
+  "essexwigcentre": {
+    "videoUrl": {
+      "fr": "/assets/videos/essex-wig-centre.mp4",
+      "es": "/assets/videos/essex-wig-centre.mp4",
+      "en": "/assets/videos/essex-wig-centre.mp4",
+      "ar": "/assets/videos/essex-wig-centre.mp4",
+      "it": "/assets/videos/essex-wig-centre.mp4"
+    },
+    "chatLink": "https://chat.onew3rld.ai/org/EssexWigCentre/chat/sx22cpv3m5we413",
+    "teamLink": "https://chat.onew3rld.ai/org/EssexWigCentre",
+    "replayLink": "?id=essexwigcentre",
+    "logo": "/assets/images/essex-wig-centre-2-removebg-preview.png",
+    "logoSize": "250px",
+    "themeColor": "rgba(255, 255, 255, 0.9)",
+    "buttonColor": "#A06836",
+    "buttonBorderColor": "rgba(160, 104, 54, 1)",
+    "buttonHoverBg": "rgba(160, 104, 54, 0.1)",
+    "buttonHoverBorder": "rgba(160, 104, 54, 1)",
+    "fontPrimaryColor": "#A06836",
+    "fontSecondaryColor": "#9C7A5C",
+    "iconFilter": "invert(100%) brightness(120%)"
   }
 }
