@@ -347,6 +347,9 @@
     "buttonHoverBorder": "rgba(160, 104, 54, 1)",
     "fontPrimaryColor": "#A06836",
     "fontSecondaryColor": "#9C7A5C",
-    "iconFilter": "invert(100%) brightness(120%)"
+    "iconFilter": "invert(100%) brightness(120%)",
+    "teamText": {
+      "en": "SERVICES"
+    }
   }
 }
