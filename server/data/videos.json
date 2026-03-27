@@ -354,5 +354,34 @@
     "teamText": {
       "en": "SERVICES"
     }
+  },
+
+  "dubcustoms": {
+    "videoUrl": {
+      "fr": "/assets/videos/dub-customs.mp4",
+      "es": "/assets/videos/dub-customs.mp4",
+      "en": "/assets/videos/dub-customs.mp4",
+      "ar": "/assets/videos/dub-customs.mp4",
+      "it": "/assets/videos/dub-customs.mp4"
+    },
+    "chatLink": "https://chat.onew3rld.ai/org/DUBCustoms/chat/lqo8ifx2r7hr0xf",
+    "teamLink": "https://chat.onew3rld.ai/org/DUBCustoms",
+    "replayLink": "?id=essexwigcentre",
+    "logo": "/assets/images/dub-customs-logo.jpeg",
+    "logoSize": "250px",
+    "overlayBackgroundColor": "rgba(0, 0, 0, 1)",
+    "overlayBlurEnabled": false,
+    "overlayBlurBackground": "transparent",
+    "closeIconFilter": "brightness(0) invert(0)",
+    "buttonColor": "#ffffff",
+    "buttonBorderColor": "rgba(31, 178, 217, 1)",
+    "buttonHoverBg": "rgba(31, 178, 217, 1)",
+    "buttonHoverBorder": "#ffffff",
+    "fontPrimaryColor": "#ffffff",
+    "fontSecondaryColor": "#b3b3b3",
+    "iconFilter": "invert(100%) brightness(120%)",
+    "teamText": {
+      "en": "EXPLORE OUR WORK"
+    }
   }
 }
