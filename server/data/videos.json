@@ -372,7 +372,7 @@
     "overlayBackgroundColor": "rgba(0, 0, 0, 1)",
     "overlayBlurEnabled": false,
     "overlayBlurBackground": "transparent",
-    "closeIconFilter": "brightness(0) invert(0)",
+    "closeIconFilter": "brightness(0) invert(1)",
     "buttonColor": "#ffffff",
     "buttonBorderColor": "rgba(31, 178, 217, 1)",
     "buttonHoverBg": "rgba(31, 178, 217, 1)",
